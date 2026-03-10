@@ -55,7 +55,7 @@ const getWeatherData = async () => {
         w_forecast.textContent = weather[0].main;
         w_icon.innerHTML = `<img src="https://openweathermap.org/img/wn/${weather[0].icon}@2x.png">`;
         w_temperature.innerHTML = `${(main.temp - 273 ).toFixed(1)} &#176`;
-        w_min.innerHTML = `Min : ${(main.temp_min - 2743.15).toFixed(1)} &#176`;
+        w_min.innerHTML = `Min : ${(main.temp_min - 273.15).toFixed(1)} &#176`;
         w_max.innerHTML = `Max : ${(main.temp_max - 273).toFixed(1)} &#176`;
         w_feelsLike.innerHTML = `${(main.feels_like - 273).toFixed(1)} &#176`;
         w_humidity.innerHTML = `${main.humidity} &#37; `
